@@ -20,15 +20,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Who           What     Value.
-        // Chaning our internal design value after loading. 
+        // Chaning our internal design value after loading.
         diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix")
         
         diceImageViewOne.alpha = 0.5
         
         diceImageTwo.image = UIImage(imageLiteralResourceName: "DiceTwo")
+        
         // Do any additional setup after loading the view.
     }
 
-
+  
+    @IBAction func rowButtonPressed(_ sender: Any) {
+        //        print("Button got tapped")
+                diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceFour")
+                diceImageTwo.image = UIImage(imageLiteralResourceName: "DiceFour")
+    }
+    
 }
 
